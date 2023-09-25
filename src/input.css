@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#abrir-carrinho, #abrir-perfil, #fechar-carrinho{
+    font-size: 22px;
+    color: white;
+}
+
+i:hover {
+    color: rgb(182, 179, 179);
+}
+
+.rodape {
+    display: flex;
+    height: 200px;
+    gap: 200px;
+}
+
+.rodape-informaçoes {
+    padding: 20px;
+}
+
+.rodape-informaçoes h2, a {
+    color: #fff;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.lerMais p {
+    color: #ddd;
+    font-family: sans-serif;
+    margin: 5px;
+    margin-left: 0px;
+}
+
+.lerMais p:last-child {
+    margin-bottom: 0;
+}
+
+
+.rodape-redeSocial {
+    height: 65px;
+    display: flex;
+    justify-content: end;
+    background-color: #333;
+    align-items: center;
+}
+
+.rodape-redeSocial-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ddd;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.rodape-redeSocial-link a {
+    color: #000;
+    font-size: 1.5rem;
+
+}
+
+.rodape-redeSocial-link:hover {
+    background-color: #444;
+}
+
+.rodape-redeSocial-link a:hover {
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 850px) {
+    #container-produto {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1120px) {
+    .container-checkout{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-checkout-section{
+        width: 350px;
+
+    }
+
+    .container-checkout-section-contato{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .rodape {
+        flex-direction: column;
+        gap: 60px;
+        height: 450px;
+    }
+
+    .rodape-informaçoes a h2{
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .container-checkout{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    .container-checkout-section{
+        width: 300px;
+
+    }
+}

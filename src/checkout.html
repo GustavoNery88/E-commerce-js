@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WMX</title>
+  <link rel="stylesheet" href="/dist/output.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-stone-200 flex flex-col h-screen">
+  <header class="top-0 fixed w-full flex bg-blue-950 justify-end mb-6 shadow-lg shadow-indigo-500/40 z-10 h-14">
+
+  </header>
+  <form action="" class="mt-20 p-5 flex w-100 grow gap-5 container-checkout">
+    <section id="dados-usuario" class="w-1/3 bg-white rounded-lg container-checkout-section">
+      <p class="mb-5 text-center mt-5 font-bold">Seu dados</p>
+      <div class="flex flex-col px-10 py-5">
+        <label for="nome" class="font-bold text-sm mb-2">Nome</label>
+        <input type="text" id="nome" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="João Pinheiro"
+          required>
+      </div>
+      <div class="flex flex-col px-10 py-5">
+        <label for="email" class="font-bold text-sm mb-2">Email</label>
+        <input type="email" id="email" class="rounded-sm px-2 border-2 border-slate-200 py-1"
+          placeholder="joaopinheiro@gmail.com" required>
+      </div>
+      <div class="flex flex-col px-10 py-5">
+        <label for="telefone" class="font-bold text-sm mb-2">Telefone</label>
+        <input type="tel" id="telefone" class="rounded-sm px-2 border-2 border-slate-200 py-1"
+          placeholder="(91)8902-8282" required>
+      </div>
+    </section>
+
+    <section id="pagamento-entrega" class="w-1/3 bg-white rounded-lg container-checkout-section">
+      <p class="mb-5 text-center mt-5 font-bold">Pagamento de entrega</p>
+      <div class="flex flex-col px-10 py-3">
+        <label for="numero-cartao" class="font-bold text-sm mb-2">Número do cartão</label>
+        <input type="text" id="numero-cartao" class="rounded-sm px-2 border-2 border-slate-200 py-1"
+          placeholder="1111 1111 1111 1111" required>
+      </div>
+      <div class="flex container-checkout-section-contato">
+        <div class="flex flex-col px-10 py-3">
+          <label for="cv" class="font-bold text-sm mb-2">CV</label>
+          <input type="text" id="cv" class="rounded-sm px-2 border-2 border-slate-200 py-1 w-12" placeholder="222"
+            required>
+        </div>
+        <div class="flex flex-col px-10 py-3">
+          <label for="data-validade" class="font-bold text-sm mb-2">Data de validade</label>
+          <input type="date" id="data-validade" class="rounded-sm px-2 border-2 border-slate-200 py-1 w-15"
+            placeholder="222" required>
+        </div>
+      </div>
+      <div class="flex flex-col px-10 py-3">
+        <label for="cep" class="font-bold text-sm mb-2">CEP</label>
+        <input type="text" id="cep" class="rounded-sm px-2 border-2 border-slate-200 py-1" placeholder="37333-80"
+          required>
+      </div>
+      <div class="flex flex-col px-10 py-3">
+        <label for="endereco" class="font-bold text-sm mb-2">Endereço</label>
+        <input type="text" id="endereco" class="rounded-sm px-2 border-2 border-slate-200 py-1"
+          placeholder="Avenida José Almeida" required>
+      </div>
+      <div class="flex container-checkout-section-contato">
+        <div class="flex flex-col px-10 py-3">
+          <label for="numero" class="font-bold text-sm mb-2">Número</label>
+          <input type="text" id="numero-endereço" class="rounded-sm px-2 border-2 border-slate-200 py-1 w-12"
+            placeholder="244" required>
+        </div>
+        <div class="flex flex-col px-10 py-3">
+          <label for="complemento" class="font-bold text-sm mb-2">Complemento</label>
+          <input type="text" id="complemento" class="rounded-sm px-2 border-2 border-slate-200 py-1 w-15"
+            placeholder="445" required>
+        </div>
+      </div>
+    </section>
+    <section id="produtos-checkout" class="w-1/3 bg-white rounded-lg container-checkout-section" >
+      <section id="container-produtos-checkout" class="h-4/5 overflow-y-auto px-2 py-2 flex flex-col gap-2">
+
+      </section>
+      <section id="celula-checkout" class="flex flex-col px-2 h-1/5 justify-around">
+        <button type="submit" class="bg-slate-900 text-slate-200 p-1 rounded hover:bg-slate-800" id="botao-finalizar-compra">Finalizar Compra</button>
+      </section>
+    </section>
+  </form>
+
+  <script src="checkout.js" type="module"></script>
+</body>
+
+</html>

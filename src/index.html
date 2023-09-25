@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WMX</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body class="bg-stone-200">
+  <section id="carrinho"
+    class="p-5 text-white fixed top-0 right-[-360px] bg-blue-950 h-screen w-[360px] z-50 duration-200 border-l border-slate-200 flex flex-col justify-between">
+    <div class="cabecalho-carrinho flex justify-between m-4">
+      <p>Meu carrinho</p>
+      <button id="fechar-carrinho"><i class="bi bi-x-circle-fill"></i></button>
+    </div>
+    <section class="flex flex-col gap-2 h-3/5 overflow-y-auto" id="produtos-carrinho">
+
+    </section>
+    <p id="preco-total" class="bg-slate-200 text-green-800 rounded-sm p-2">Total:</p>
+    <button class="bg-slate-200 text-slate-900 p-1 rounded hover:bg-slate-400" id="botao-finalizar-compra">Finalizar
+      Compra</button>
+  </section>
+
+
+  <header class="top-0 fixed w-full flex bg-blue-950 justify-end mb-6 shadow-lg shadow-indigo-500/40 z-10 h-14">
+    <div class="cabecalho m-3 flex gap-3">
+      <button id="abrir-carrinho"><i class="bi bi-cart-fill"></i></button>
+      <a href="./pedidos.html"><button id="abrir-perfil"><i class="bi bi-person-fill"></i></button></a>
+    </div>
+  </header>
+
+  <main class="mt-20 flex flex-col items-center pb-20">
+    <section id="filtros" class="flex gap-3">
+      <div>
+        <input type="radio" id="exibir-todos" name="filtro" class="peer hidden" checked>
+        <label for="exibir-todos"
+          class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Todos</label>
+      </div>
+      <div>
+        <input type="radio" id="exibir-masculino" name="filtro" class="peer hidden">
+        <label for="exibir-masculino"
+          class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer">Masculino</label>
+      </div>
+      <div>
+        <input type="radio" id="exibir-feminino" name="filtro" class="peer hidden">
+        <label for="exibir-feminino"
+          class="peer-checked:bg-slate-950 peer-checked:text-slate-200 peer-checked:font-bold p-2 rounded-xl select-none cursor-pointer ">Feminino</label>
+      </div>
+
+    </section>
+    <section class="mt-8 container-produto flex gap-6 flex-wrap grid-cols-[200px_200px_200px_200px] justify-center" id="container-produto">
+    </section>
+  </main>
+
+  <footer class="rodape bg-blue-950 ">
+    <div class="rodape-informaçoes">
+      <a href="">
+        <h2 class="hover:text-slate-300">Informações</h2>
+      </a>
+    </div>
+    <div class="rodape-informaçoes">
+      <a href="">
+        <h2 class="hover:text-slate-300">Sobre nós</h2>
+      </a>
+    </div>
+    <div class="rodape-informaçoes">
+      <a href="">
+        <h2 class="hover:text-slate-300">Entre em contato</h2>
+      </a>
+    </div>
+  </footer>
+  <div class="rodape-redeSocial">
+    <div class="rodape-redeSocial-link">
+      <a href=""><i class="bi bi-instagram"></i></a>
+    </div>
+    <div class="rodape-redeSocial-link">
+      <a href=""><i class="bi bi-facebook"></i></a>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
