@@ -28,7 +28,7 @@ function finalizarCompra(evento) {
     salvarLocalStorage("historico", historicoDePedidosAtualizado)
     apagarDoLocalStorage("carrinho")
 
-    window.location.href = "/E-commerce-js/src/pedidos.html"
+    window.location.href = "https://gustavonery88.github.io/E-commerce-js/src/pedidos.html"
 
 }
 
