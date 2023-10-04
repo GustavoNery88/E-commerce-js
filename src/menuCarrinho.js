@@ -17,7 +17,7 @@ function IrParaCheckout(){
     return;
   }
 
-  window.location.href = "/src/checkout.html";
+  window.location.href = "https://gustavonery88.github.io/E-commerce-js/src/checkout.html";
 }
 
 
