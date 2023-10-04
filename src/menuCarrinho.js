@@ -17,7 +17,7 @@ function IrParaCheckout(){
     return;
   }
 
-  location.href += "checkout.html";
+  location.href = "checkout.html";
 }
 
 
