@@ -123,7 +123,7 @@ export function atualizarPrecoCarrinho() {
   for( let idProdutoNoCarrinho in idsProdutoCarrinhoComQuantidade){
     precoTotalCarrinho += catalogo.find(p => p.id === idProdutoNoCarrinho).preco * idsProdutoCarrinhoComQuantidade[idProdutoNoCarrinho]
   }
-  precoCarrinho.innerHTML = `Tatal: $${precoTotalCarrinho}`
+  precoCarrinho.innerHTML = `Total: $${precoTotalCarrinho}`
 
   
 }
